@@ -57,3 +57,8 @@ brew install --cask flutter
 # install tmux
 
 brew install tmux
+
+
+# install unrar
+
+ brew install carlocab/personal/unrar
