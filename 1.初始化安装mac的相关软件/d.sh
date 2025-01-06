@@ -52,3 +52,8 @@ settings --->  auto save
 # install flutter 
 
 brew install --cask flutter
+
+
+# install tmux
+
+brew install tmux
