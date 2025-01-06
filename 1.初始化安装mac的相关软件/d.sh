@@ -33,6 +33,22 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 brew install zsh-syntax-highlighting
 
 
+
+
+
+# vscode  自动保存
+
+
+settings --->  auto save
+
+
+# android studio 用命令行启动模拟器 
+
+命令的路径：Tools--> SDK Manager--->Android SDK --> Android SDK Locations
+
+列出所有模拟器名称：/Users/applmima1111/Library/Android/sdk/emulator/emulator -list-avds
+启动某个模拟器 ： /Users/applmima1111/Library/Android/sdk/emulator/emulator -avd  模拟器名称
+
 # install flutter 
 
 brew install --cask flutter
