@@ -29,9 +29,36 @@ brew install --cask [软件名]
 brew install zsh
 # install ：安装 Oh My Zsh 并配置
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# 自动补全插件
-brew install zsh-syntax-highlighting
 
+④ zsh-autosuggestions
+# 参考资料： https://mp.weixin.qq.com/s/6n5nddCzZ0ET7nNkD6xHOg
+三方插件，自动补全插件，根据历史命令和当前输入内容，自动推荐可能的命令。安装命令：
+
+ 
+
+brew install zsh-autosuggestions
+# 编辑文件
+vim ~/.zshrc
+# 将下面配置加到.zshrc内容末尾
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# 添加内容后执行
+source .zshrc
+
+
+
+⑤ zsh-syntax-highlighting
+
+三方插件，语法高亮插件，让命令行更加易读易懂。安装命令：
+
+ 
+
+brew install zsh-syntax-highlighting
+# 编辑文件
+vim ~/.zshrc
+# 将下面配置加到.zshrc内容末尾
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# 添加内容后执行
+source .zshrc
 
 
 
