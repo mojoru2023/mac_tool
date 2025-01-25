@@ -34,6 +34,71 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # 参考资料： https://mp.weixin.qq.com/s/6n5nddCzZ0ET7nNkD6xHOg
 三方插件，自动补全插件，根据历史命令和当前输入内容，自动推荐可能的命令。安装命令：
 
+
+
+
+#mac 中安装gradle 同时在android studio 中设置gradle
+
+启动您的 Terminal 应用程序。
+
+安装 SDKMAN!：
+在终端中运行以下命令：
+
+curl -s "https://get.sdkman.io" | bash
+初始化 SDKMAN!：
+安装完成后，需要运行以下命令来初始化 SDKMAN!：
+
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+验证安装：
+运行以下命令以检查 SDKMAN! 是否安装成功：
+
+
+sdk version
+如果显示版本信息，则表示 SDKMAN! 已成功安装。
+
+使用 SDKMAN! 安装 Gradle
+安装 Gradle：
+现在可以使用 SDKMAN! 安装 Gradle。在终端中运行：
+
+
+sdk install gradle
+验证 Gradle 安装：
+安装完成后，您可以通过以下命令检查 Gradle 的版本：
+
+
+gradle -v
+这将输出您已安装的 Gradle 版本和其他相关信息。
+
+
+设置 Gradle Home
+打开 Android Studio：
+启动 Android Studio。
+
+打开项目结构：
+
+点击菜单栏中的 File （文件）选项。
+选择 Project Structure... （项目结构）。在一些版本中，您也可以通过快捷键 Ctrl + Alt + Shift + S（Windows/Linux）或 Command + ;（Mac）进入这个界面。
+配置 Gradle：
+
+在弹出的窗口中，选择左侧的 Project 选项卡。
+在右侧，您会看到一个名为 Gradle Version 的下拉框。确保它不是空的，而是选择一个合适的版本。
+如果您的 Gradle Home 仍然为空，您需要手动设置它。
+手动设置 Gradle Home：
+
+在同一窗口中，找到 Gradle 选项（通常在左侧的列表中）。
+选择 Use local gradle distribution（使用本地 Gradle 分发）。
+在 Gradle home 字段中，输入本地 Gradle 的安装路径，例如：
+Windows 示例：C:\Users\<YourUsername>\gradle-x.x
+macOS/Linux 示例：/Users/<YourUsername>/gradle-x.x
+确保填写的是正确的路径，并且该路径下包含 bin, lib 等目录。
+应用更改并关闭：
+
+点击 OK 或 Apply 按钮，保存更改并关闭窗口。
+检查和同步：
+
+回到主界面，点击 Sync Project with Gradle Files（与 Gradle 文件同步），以确保所有更改生效。
+
+
  
 
 brew install zsh-autosuggestions
