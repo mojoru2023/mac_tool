@@ -36,6 +36,65 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 
 
+ 
+
+brew install zsh-autosuggestions
+# 编辑文件
+vim ~/.zshrc
+# 将下面配置加到.zshrc内容末尾
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# 添加内容后执行
+source .zshrc
+
+
+
+⑤ zsh-syntax-highlighting
+
+三方插件，语法高亮插件，让命令行更加易读易懂。安装命令：
+
+ 
+
+brew install zsh-syntax-highlighting
+# 编辑文件
+vim ~/.zshrc
+# 将下面配置加到.zshrc内容末尾
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# 添加内容后执行
+source .zshrc
+
+
+
+
+# vscode  自动保存
+
+
+settings --->  auto save
+
+
+# android studio 用命令行启动模拟器 
+
+命令的路径：Tools--> SDK Manager--->Android SDK --> Android SDK Locations
+
+列出所有模拟器名称：/Users/applmima1111/Library/Android/sdk/emulator/emulator -list-avds
+启动某个模拟器 ： /Users/applmima1111/Library/Android/sdk/emulator/emulator -avd  模拟器名称
+
+# install flutter 
+
+brew install --cask flutter
+
+
+# install tmux
+
+brew install tmux
+
+
+# install unrar
+
+ brew install carlocab/personal/unrar
+
+
+ 
+
 
 #mac 中安装gradle 同时在android studio 中设置gradle
 
@@ -98,59 +157,3 @@ macOS/Linux 示例：/Users/<YourUsername>/gradle-x.x
 
 回到主界面，点击 Sync Project with Gradle Files（与 Gradle 文件同步），以确保所有更改生效。
 
-
- 
-
-brew install zsh-autosuggestions
-# 编辑文件
-vim ~/.zshrc
-# 将下面配置加到.zshrc内容末尾
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# 添加内容后执行
-source .zshrc
-
-
-
-⑤ zsh-syntax-highlighting
-
-三方插件，语法高亮插件，让命令行更加易读易懂。安装命令：
-
- 
-
-brew install zsh-syntax-highlighting
-# 编辑文件
-vim ~/.zshrc
-# 将下面配置加到.zshrc内容末尾
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# 添加内容后执行
-source .zshrc
-
-
-
-
-# vscode  自动保存
-
-
-settings --->  auto save
-
-
-# android studio 用命令行启动模拟器 
-
-命令的路径：Tools--> SDK Manager--->Android SDK --> Android SDK Locations
-
-列出所有模拟器名称：/Users/applmima1111/Library/Android/sdk/emulator/emulator -list-avds
-启动某个模拟器 ： /Users/applmima1111/Library/Android/sdk/emulator/emulator -avd  模拟器名称
-
-# install flutter 
-
-brew install --cask flutter
-
-
-# install tmux
-
-brew install tmux
-
-
-# install unrar
-
- brew install carlocab/personal/unrar
