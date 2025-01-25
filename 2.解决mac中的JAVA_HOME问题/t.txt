@@ -4,6 +4,8 @@ flutter doctor 时出现的andriod toolchain中的JAVA_HOME问题
 
 
 1. 首先使用 brew reinstall java
+sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 把有效路径找到名加入到zshrc中
 
 export JAVA_HOME=/path/to/your/jdk
