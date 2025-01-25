@@ -157,3 +157,33 @@ macOS/Linux 示例：/Users/<YourUsername>/gradle-x.x
 
 回到主界面，点击 Sync Project with Gradle Files（与 Gradle 文件同步），以确保所有更改生效。
 
+#  gradle 的命令行需要 java  安装 Java JDK
+方法 1: 使用 Homebrew 安装 JDK
+打开终端。
+
+确保 Homebrew 已安装：
+如果您还没有安装 Homebrew，可以通过运行以下命令安装它：
+
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+安装 OpenJDK：
+您可以使用 Homebrew 安装 OpenJDK。运行以下命令：
+
+
+brew install openjdk
+设置 JAVA_HOME 环境变量：
+安装完成后，需要设置 JAVA_HOME 环境变量。您可以在 .bash_profile, .zshrc, 或 .bashrc 文件中添加以下行（取决于您使用的 shell）：
+
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+然后，执行以下命令使更改生效：
+
+
+source ~/.bash_profile  # 如果您使用 bash
+source ~/.zshrc         # 如果您使用 zsh
+验证安装：
+运行以下命令以验证 Java 是否已安装：
+
+
+java -version
+如果显示 Java 版本信息，则说明 Java 已成功安装。
