@@ -1,3 +1,15 @@
+mac 上面设置JAVA_HOME (gradle -v需要)
+
+
+输入 /usr/libexec/java_home --> 这个输出内容才是JAVA_HOME
+
+--> /Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home
+vim ~/.zshrc
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home
+
+source  ~/.zshrc
+
+
 
 
 flutter doctor 时出现的andriod toolchain中的JAVA_HOME问题
@@ -19,3 +31,4 @@ source ~./zshrc
 再用flutter doctor来测试 
 
 注意，需要去掉最后的/bin/java
+
