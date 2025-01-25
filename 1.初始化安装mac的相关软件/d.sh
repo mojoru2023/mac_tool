@@ -176,7 +176,21 @@ brew install openjdk
 
 sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
-export JAVA_HOME=/path/to/your/jdk
+
+mac 上面设置JAVA_HOME (gradle -v需要)
+
+
+输入 /usr/libexec/java_home --> 这个输出内容才是JAVA_HOME
+
+--> /Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home
+vim ~/.zshrc
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home
+
+
+
+
+
+
 export PATH=$JAVA_HOME/bin:$PATH
 
 
