@@ -174,13 +174,15 @@ brew install openjdk
 设置 JAVA_HOME 环境变量：
 安装完成后，需要设置 JAVA_HOME 环境变量。您可以在 .bash_profile, .zshrc, 或 .bashrc 文件中添加以下行（取决于您使用的 shell）：
 
+sudo ln -sfn $(brew --prefix)/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-然后，执行以下命令使更改生效：
+export JAVA_HOME=/path/to/your/jdk
+export PATH=$JAVA_HOME/bin:$PATH
 
 
-source ~/.bash_profile  # 如果您使用 bash
-source ~/.zshrc         # 如果您使用 zsh
+source ~./zshrc
+
+
 验证安装：
 运行以下命令以验证 Java 是否已安装：
 
