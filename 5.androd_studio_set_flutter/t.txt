@@ -1,0 +1,14 @@
+
+
+https://stackoverflow.com/questions/50321966/where-is-darts-sdk-located-within-flutter-folder
+
+
+
+
+Run brew info flutter
+
+Then you get the path: e.g. /opt/homebrew/Caskroom/flutter/2.5.3
+
+And there the bin/cache has the dartk-sdk:
+
+/opt/homebrew/Caskroom/flutter/2.5.3/flutter/bin/cache/dart-sdk
